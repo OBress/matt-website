@@ -18,9 +18,7 @@ export default function ResumeViewer() {
           )}
 
           <iframe
-            src={`${
-              process.env.NODE_ENV === "production" ? "/matt-website" : ""
-            }/resume.pdf`}
+            src="/resume.pdf"
             className="w-full h-[800px]"
             onLoad={() => setIsLoading(false)}
             title="Resume"
@@ -29,7 +27,7 @@ export default function ResumeViewer() {
       </div>
 
       <motion.a
-        href="#"
+        href="/resume.pdf"
         download="resume.pdf"
         className="flex items-center gap-2 bg-[#041E42] text-white px-6 py-3 rounded-full font-medium hover:bg-[#1E407C] transition-colors"
         whileHover={{ scale: 1.05 }}
