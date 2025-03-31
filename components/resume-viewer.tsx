@@ -3,21 +3,9 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
-import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-import "react-pdf/dist/esm/Page/TextLayer.css";
-
-// Initialize pdfjs worker
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 export default function ResumeViewer() {
-  const [numPages, setNumPages] = useState<number>(0);
   const [isLoading, setIsLoading] = useState(true);
-
-  function onDocumentLoadSuccess({ numPages }: { numPages: number }) {
-    setNumPages(numPages);
-    setIsLoading(false);
-  }
 
   return (
     <div className="flex flex-col items-center">
@@ -29,26 +17,19 @@ export default function ResumeViewer() {
             </div>
           )}
 
-          <Document
-            file="/resume.pdf"
-            onLoadSuccess={onDocumentLoadSuccess}
-            loading={
-              <div className="flex justify-center p-4">
-                <div className="w-12 h-12 border-4 border-[#041E42] border-t-transparent rounded-full animate-spin"></div>
-              </div>
-            }
-            className="flex flex-col items-center"
+          <object
+            data="/resume.pdf"
+            type="application/pdf"
+            className="w-full h-[800px]"
+            onLoad={() => setIsLoading(false)}
           >
-            {Array.from(new Array(numPages), (el, index) => (
-              <Page
-                key={`page_${index + 1}`}
-                pageNumber={index + 1}
-                width={800}
-                renderTextLayer={false}
-                renderAnnotationLayer={false}
-              />
-            ))}
-          </Document>
+            <p>
+              Your browser does not support PDFs.
+              <a href="/resume.pdf" className="text-blue-500 hover:underline">
+                Download the PDF
+              </a>
+            </p>
+          </object>
         </div>
       </div>
 
