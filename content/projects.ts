@@ -15,7 +15,7 @@ export const projects: Project[] = [
     title: "Bucknell Sports Video",
     description:
       "Produced promotional content for Bucknell Men's Basketball, garnering over 100,000 views. Led the planning, production, and editing of video content, ensuring high-quality execution and timely delivery.",
-    image: `${process.env.NODE_ENV === 'production' ? '/matt-website' : ''}/2.jpg`,
+    image: "/2.jpg",
     link: "https://example.com/project1",
     isVideo: true,
     location: "Lancaster, PA",
@@ -25,7 +25,7 @@ export const projects: Project[] = [
     title: "High-Speed Drone Racing Coverage",
     description:
       "Captured immersive footage of high-speed drone racing, enhancing the visuals to meet the specific creative and technical requirements of the company. Took charge of drone piloting and coordinated with event staff to ensure smooth and exciting race coverage.",
-    image: `${process.env.NODE_ENV === 'production' ? '/matt-website' : ''}/1.jpg`,
+    image: "/1.jpg",
     link: "https://www.youtube.com/watch?v=nDP_DuxFWDw&ab_channel=GregDoucette",
     isVideo: false,
     location: "Mill Hall, PA",
