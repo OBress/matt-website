@@ -8,7 +8,6 @@ import { projects } from "@/content/projects";
 
 export default function ProjectSlideshow() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(true);
   const [isHovered, setIsHovered] = useState(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -27,7 +26,7 @@ export default function ProjectSlideshow() {
   };
 
   useEffect(() => {
-    if (isPlaying && !isHovered) {
+    if (!isHovered) {
       timerRef.current = setTimeout(() => {
         nextSlide();
       }, 5000);
@@ -38,7 +37,7 @@ export default function ProjectSlideshow() {
         clearTimeout(timerRef.current);
       }
     };
-  }, [currentIndex, isPlaying, isHovered]);
+  }, [currentIndex, isHovered]);
 
   const handleMouseEnter = () => {
     setIsHovered(true);

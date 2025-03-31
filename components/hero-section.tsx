@@ -1,6 +1,5 @@
 "use client";
 
-import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
