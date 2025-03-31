@@ -18,7 +18,9 @@ export default function ResumeViewer() {
           )}
 
           <iframe
-            src="/resume.pdf"
+            src={`${
+              process.env.NODE_ENV === "production" ? "/matt-website" : ""
+            }/resume.pdf`}
             className="w-full h-[800px]"
             onLoad={() => setIsLoading(false)}
             title="Resume"

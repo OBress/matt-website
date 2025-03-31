@@ -66,7 +66,9 @@ export default function AboutSection() {
             className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-[#041E42] shadow-xl"
           >
             <Image
-              src="/profile.jpeg"
+              src={`${
+                process.env.NODE_ENV === "production" ? "/matt-website" : ""
+              }/profile.jpeg`}
               alt="Profile"
               fill
               className="object-cover"
