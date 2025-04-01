@@ -17,7 +17,7 @@ export const projects: Project[] = [
       "Produced promotional content for Bucknell Men's Basketball, garnering over 100,000 views. Led the planning, production, and editing of video content, ensuring high-quality execution and timely delivery.",
     image: "/2.jpg",
     link: "https://example.com/project1",
-    isVideo: true,
+    isVideo: false,
     location: "Lancaster, PA",
   },
   {
@@ -37,7 +37,7 @@ export const projects: Project[] = [
       "Delivered a heartwarming and unforgettable proposal video, carefully crafted to meet the client's expectations. Managed the logistics, timing, and execution while balancing creativity and surprise to capture the perfect moment.",
     image: "/placeholder.svg?height=500&width=800",
     link: "https://www.youtube.com/watch?v=nDP_DuxFWDw&ab_channel=GregDoucette",
-    isVideo: true,
+    isVideo: false,
     location: "Bethany Beach, DE",
     videoUrl: "https://www.youtube.com/embed/nDP_DuxFWDw"
   },
