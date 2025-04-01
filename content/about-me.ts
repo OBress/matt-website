@@ -31,12 +31,12 @@ export const aboutMe: AboutMe = {
     },
     {
       name: "Instagram",
-      url: "https://instagram.com",
+      url: "https://www.instagram.com/matt.y_06/",
       icon: "Instagram"
     },
     {
       name: "Twitter",
-      url: "https://twitter.com",
+      url: "https://x.com/matt_fravel",
       icon: "Twitter"
     }
   ]
