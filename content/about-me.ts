@@ -12,7 +12,7 @@ export interface AboutMe {
 
 export const aboutMe: AboutMe = {
   name: "Matt Fravel",
-  description: "Hi there! I'm Matt, a passionate software developer with expertise in web development and UI/UX design. With over 5 years of experience building modern web applications, I specialize in React, TypeScript, and creating responsive, user-friendly interfaces. When I'm not coding, you can find me hiking, reading, or experimenting with new technologies.",
+  description: "Hi there! I'm Matt.",
   socialLinks: [
     {
       name: "Email",
