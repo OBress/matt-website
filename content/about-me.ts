@@ -12,7 +12,7 @@ export interface AboutMe {
 
 export const aboutMe: AboutMe = {
   name: "Matt Fravel",
-  description: "Currently a student at Penn State pursuing a BA in Telecommunications with a minor in Spanish. When I'm not creating content, you can find me at the gym, playing tennis, or out with friends. I'm also a big NFL and Penn State sports fan, always keeping up with the action. Other than that, I’m just focused on getting better at what I do and perfecting my craft.",
+  description: "Currently a Penn State student pursuing a BA in Telecommunications with a minor in Spanish, I’m passionate about creating engaging video content. When I’m not behind the camera, you’ll find me at the gym, playing tennis, or keeping up with NFL and Penn State sports. I’ve worked on sports promos, high-speed drone racing, and special event videos, always aiming to capture the perfect shot. Always looking for new projects, feel free to reach out! All my socials are below.",
   socialLinks: [
     {
       name: "Email",
