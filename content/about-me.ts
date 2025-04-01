@@ -12,7 +12,7 @@ export interface AboutMe {
 
 export const aboutMe: AboutMe = {
   name: "Matt Fravel",
-  description: "Hi there! I'm Matt.",
+  description: "Currently a student at Penn State pursuing a BA in Telecommunications with a minor in Spanish. When I'm not creating content, you can find me at the gym, playing tennis, or out with friends. I'm also a big NFL and Penn State sports fan, always keeping up with the action. Other than that, I’m just focused on getting better at what I do and perfecting my craft.",
   socialLinks: [
     {
       name: "Email",
